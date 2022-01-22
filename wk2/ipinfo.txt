@@ -1,0 +1,26 @@
+1. https://www.shopify.ca/whois/domain-lookup
+	IP Address: 104.16.254.71
+	Geolocation: Lattitude  43.70011
+		     Longitude  -79.4163
+
+2. https://www.info.com/web/results
+	IP Address: 54.85.173.251
+	Geolocation: Lattitude  39.04372
+		     Longitude  -77.48749
+
+3. https://www.fastquicksearch.com/
+	IP Address: 151.101.2.114
+	Geolocation: Lattitude  37.77493
+		     Longitude  -122.41942
+
+4. https://www.whatismyip.com
+	IP Address: 104.27.194.88
+	Geolocation: Lattitude  40.73566
+		     Longitude  -74.17237
+
+5. https://ipinfo.info
+	IP Address: 104.21.51.216
+	Geolocation: Lattitude  40.73566
+		     Longitude  -74.17237
+
+Reference Link: https://ip-geolocation.whoisxmlapi.com/lookup
