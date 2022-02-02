@@ -1,0 +1,103 @@
+Print Captured Packets in ASCII
+
+root@ubuntu-s-1vcpu-1gb-intel-tor1-01:~# tcpdump -A -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+03:18:13.250005 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 704304620:704304656, ack 718035383, win 4040, length 36
+E..LR.@.@..}..:.E.;0....)...*.Y.P...Z.....R....X..zu..t.Y...Z&......c..0.d.<
+03:18:13.250703 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 36:144, ack 1, win 4040, length 108
+E...R.@.@..4..:.E.;0....)...*.Y.P...[%...e._..s5....fnbb...-..L....FJA.. z...%..z$.E...../.(......Y.......%<0'H..:ye.G.............%2..:..D{....AG..
+03:18:13.250732 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 144:180, ack 1, win 4040, length 36
+E..LR.@.@..{..:.E.;0....)..|*.Y.P...Z........l..=..c.ixS/..e#........aTN..Wh
+03:18:13.250756 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 180:288, ack 1, win 4040, length 108
+E...R.@.@..2..:.E.;0....)...*.Y.P...[%......C.....%.l...~......&...p....c..kx.`.b.....1.{.`......'..
+...O.#&..O....^.....$.Q.tX.{..rZ..6.}.........U
+03:18:13.250776 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 288:324, ack 1, win 4040, length 36
+E..LR.@.@..y..:.E.;0....)...*.Y.P...Z..../...RRV.Q......=a#..)......ov...C9T
+03:18:13.251181 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.55744 > 67.207.67.2.domain: 14249+ [1au] PTR? 48.59.157.69.in-addr.arpa. (54)
+E..R..@.@.Q...:.C.C....5.>`.7............48.59.157.69.in-addr.arpa.......)........
+03:18:13.251214 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.60687 > 67.207.67.2.domain: 60947+ [1au] PTR? 48.59.157.69.in-addr.arpa. (54)
+E..R..@.@.Q...:.C.C....5.>`..............48.59.157.69.in-addr.arpa.......)........
+03:18:13.251435 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.57267 > 67.207.67.2.domain: 52658+ [1au] PTR? 6.58.203.159.in-addr.arpa. (54)
+E..R..@.@.Q...:.C.C....5.>`..............6.58.203.159.in-addr.arpa.......)........
+03:18:13.251463 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.59768 > 67.207.67.2.domain: 17040+ [1au] PTR? 6.58.203.159.in-addr.arpa. (54)
+E..R..@.@.Q...:.C.C..x.5.>`.B............6.58.203.159.in-addr.arpa.......)........
+03:18:13.251490 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.33607 > 67.207.67.2.domain: 35828+ [1au] PTR? 6.58.203.159.in-addr.arpa. (54)
+E..R..@.@.Q...:.C.C..G.5.>`..............6.58.203.159.in-addr.arpa.......)........
+03:18:13.252116 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.60687: 60947 1/0/1 PTR lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca. (121)
+E...5.@.?...C.C...:..5....U..............48.59.157.69.in-addr.arpa.............MQ.7.lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca...)........
+03:18:13.252127 IP ubuntu-s-1vcpu-1gb-intel-tor1-01 > 67.207.67.2: ICMP ubuntu-s-1vcpu-1gb-intel-tor1-01 udp port 60687 unreachable, length 157
+E...(...@.....:.C.C...^2....E...5.@.?...C.C...:..5....U..............48.59.157.69.in-addr.arpa.............MQ.7.lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca...)........
+03:18:13.252202 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.55744: 14249 1/0/1 PTR lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca. (121)
+E...5.@.?...C.C...:..5.....;7............48.59.157.69.in-addr.arpa.............MQ.7.lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca...)........
+03:18:13.252205 IP ubuntu-s-1vcpu-1gb-intel-tor1-01 > 67.207.67.2: ICMP ubuntu-s-1vcpu-1gb-intel-tor1-01 udp port 55744 unreachable, length 157
+E...(...@.....:.C.C...^2....E...5.@.?...C.C...:..5.....;7............48.59.157.69.in-addr.arpa.............MQ.7.lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca...)........
+03:18:13.252262 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.59768: 17040 NXDomain 0/1/1 (121)
+E...5.@.?...C.C...:..5.x..gIB............6.58.203.159.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a.....*0.....       :.......)........
+03:18:13.252277 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.57267: 52658 NXDomain 0/1/1 (121)
+E...5.@.?...C.C...:..5...................6.58.203.159.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a.....*0.....       :.......)........
+03:18:13.252305 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.59768 > 67.207.67.2.domain: 17040+ PTR? 6.58.203.159.in-addr.arpa. (43)
+E..G..@.@.Q%..:.C.C..x.5.3`.B............6.58.203.159.in-addr.arpa.....
+03:18:13.252328 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.33607: 35828 NXDomain 0/1/1 (121)
+E...5.@.?...C.C...:..5.G.................6.58.203.159.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a.....*0.....       :.......)........
+03:18:13.252363 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.57267 > 67.207.67.2.domain: 52658+ PTR? 6.58.203.159.in-addr.arpa. (43)
+E..G..@.@.Q$..:.C.C....5.3`..............6.58.203.159.in-addr.arpa.....
+03:18:13.252394 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.33607 > 67.207.67.2.domain: 35828+ PTR? 6.58.203.159.in-addr.arpa. (43)
+E..G..@.@.Q#..:.C.C..G.5.3`..............6.58.203.159.in-addr.arpa.....
+03:18:13.252423 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.59768: 17040 NXDomain 0/1/0 (110)
+E...5.@.?...C.C...:..5.x.v.bB............6.58.203.159.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a.....*0.....       :.....
+03:18:13.252521 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.57267: 52658 NXDomain 0/1/0 (110)
+E...5.@.?...C.C...:..5...v...............6.58.203.159.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a.....*0.....       :.....
+03:18:13.252546 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.33607: 35828 NXDomain 0/1/0 (110)
+E...5.@.?...C.C...:..5.G.v./.............6.58.203.159.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a.....*0.....       :.....
+03:18:13.252744 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 324:552, ack 1, win 4040, length 228
+E...R.@.@.....:.E.;0....)..0*.Y.P...[......g..r.wi.?..m.1.=.a..m............n...3..../>...*.....Q[...l.......6Z.4$......i~,...1.3........H..g^O.....[lwJ..'....Q....:.....;,.^..j..^RF#.`..x0Ft.....[.`.."..n....g...mLmg........E.K.j...\Z.,.d.....5.4..A.a.9..D......~X.q.
+03:18:13.252779 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 552:588, ack 1, win 4040, length 36
+E..LR.@.@..w..:.E.;0....)...*.Y.P...Z.....9...?..W....\f.Qe8........x....q2.
+03:18:13.252804 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 588:704, ack 1, win 4040, length 116
+E...R.@.@..&..:.E.;0....)..8*.Y.P...[-....d.":...T...r.....o...u...D%...........H.%=_)..h.27.&.)>z......H7..J.6..q.8V.'N.<$...Y......3..j..+.w.c.......}.V..
+03:18:13.252825 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 704:740, ack 1, win 4040, length 36
+E..LR.@.@..u..:.E.;0....)...*.Y.P...Z....3..j......h..Tl..p..S.....C|.....B.
+03:18:13.252867 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 740:944, ack 1, win 4040, length 204
+E...R.@.@.....:.E.;0....)...*.Y.P...[.........2..k..Hc.7.h.E.L*.J...V.}.8...H.s.3.*.....csH;..C.~..[.2.e.n...'..g,.     Vc../#...K...|..W...1(..........s.......C0IM..3......(Q.T\..+Af.......4..u3=:..... ...~...)...o.......\....'..W.......z.Wlt..6^.
+03:18:13.253240 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.51474 > 67.207.67.2.domain: 14348+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+E..Q..@.@.Q...:.C.C....5.=`.8............2.67.207.67.in-addr.arpa.......)........
+03:18:13.253279 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.43654 > 67.207.67.2.domain: 29821+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+E..Q..@.@.Q...:.C.C....5.=`.t}...........2.67.207.67.in-addr.arpa.......)........
+03:18:13.253309 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.55447 > 67.207.67.2.domain: 44071+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+E..Q..@.@.Q...:.C.C....5.=`..'...........2.67.207.67.in-addr.arpa.......)........
+03:18:13.253413 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.51474: 14348 NXDomain 0/1/1 (120)
+E...5.@.?...C.C...:..5......8............2.67.207.67.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..Y.. ..*0.....       :.......)........
+03:18:13.253458 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.51474 > 67.207.67.2.domain: 14348+ PTR? 2.67.207.67.in-addr.arpa. (42)
+E..F..@.@.Q ..:.C.C....5.2`.8............2.67.207.67.in-addr.arpa.....
+03:18:13.253466 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.43654: 29821 NXDomain 0/1/1 (120)
+E...5.@.?...C.C...:..5......t}...........2.67.207.67.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..Y.. ..*0.....       :.......)........
+03:18:13.253491 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.43654 > 67.207.67.2.domain: 29821+ PTR? 2.67.207.67.in-addr.arpa. (42)
+E..F..@.@.Q...:.C.C....5.2`.t}...........2.67.207.67.in-addr.arpa.....
+03:18:13.253520 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-intel-tor1-01.55447: 44071 NXDomain 0/1/1 (120)
+E...5.@.?...C.C...:..5....9[.'...........2.67.207.67.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..Y.. ..*0.....       :.......)........
+03:18:13.253539 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.55447 > 67.207.67.2.domain: 44071+ PTR? 2.67.207.67.in-addr.arpa. (42)
+E..F..@.@.Q...:.C.C....5.2`..'...........2.67.207.67.in-addr.arpa.....
+03:18:13.380964 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [.], seq 944:2396, ack 1, win 4040, length 1452
+E...R.@.@.....:.E.;0....)...*.Y.P...`e....)%.:.z.....=......../.j.....+dr0.r-.w.m`}(...M...<0..1....l..5...!|....4H..!.=z...\....s|!.w8..1.{.H}dq-....*F...O<.Kc$...f........w..M..:..q$D_..)...U..gk.|.......w5X.& .xf.<9.Z..I...\K...F,lYVFN(r...so.F...s3Ez..i..=
+...*o..Hc.....X...d#......Sh.M
+f.~-...q...Oh5w..f..w.}.Ws._h1......s.@.r...ry.....Do..)yS.q.~.k:F:...E.....A.=R.       .(mN.X.............h..?^.7.n,..........,4E.RS.?....@...(..G.#<g. ....-...8..^.:.|...vD..o.....e...`...  ...q.......AHV2........eJ2......S...$...J...E.yZ..f#..d...H.'+........,(.....|;..#eVEK..-N.Wc..K....B...j0)r.#.....j........6.|....9U(.......M.........F|.-..9..........c..%......j....{....@..pb.......-.7....]......~G.).........N..P........?.U..."..#....UA.@+.n.9....N'.(........!.....NA5..L.u"...-..G.n:...dn.l.m.......q.....Kb........pO.6rQ.#9....Bm-..9........?&...Z......J...._t.+QN...s..+.D.{f.-GM...... Qe/.....\.b......6.tf.b...[.Xk.Ia.e..1X.../..^.....K.........Rf..'.*..-y8..."h..3...R..t..>.y..P0h.t./.....Z.@".;...D...r.I.......)..   {.i......|.EZ....<..l....E..D"..r......../..g...R%..K..}4...p.
+...........UX0,}...
+..pO..
+.h..E..(.*C......d......@.g~g..RUsP     .&...v.`...]cu....;...}..*.....q.9o.]..x.f..og.u.......dHe......r.{M%..R.v2b..  ...x.V..l.i.VY^..'5..$&.,Zh.<qWvj.*.yVZ.T......~....(....ZS,.d.X..;.....,..~b..d....&.Q...x...-...f.....Q~.sP.........6.P."B.b..~.pm\s....^G......V..9..c..e.M.`,Fh;:..WU...k.q..T'..o...|...!.\.Vg..t.....sS......}.Y..*[.";0..f.1L...k....d..BZ...._0...<....s..{...-..;.0
+03:18:13.668951 IP ubuntu-s-1vcpu-1gb-intel-tor1-01.ssh > lnsm5-toronto63-69-157-59-48.internet.virginmobile.ca.65302: Flags [P.], seq 0:944, ack 1, win 4040, length 944
+E...R.@.@.....:.E.;0....)...*.Y.P...^i....R....X..zu..t.Y...Z&......c..0.d.<.e._..s5....fnbb...-..L....FJA.. z...%..z$.E...../.(......Y.......%<0'H..:ye.G.............%2..:..D{....AG.......l..=..c.ixS/..e#........aTN..Wh....C.....%.l...~......&...p....c..kx.`.b.....1.{.`......'..
+...O.#&..O....^.....$.Q.tX.{..rZ..6.}.........U./...RRV.Q......=a#..)......ov...C9T...g..r.wi.?..m.1.=.a..m............n...3..../>...*.....Q[...l.......6Z.4$......i~,...1.3........H..g^O.....[lwJ..'....Q....:.....;,.^..j..^RF#.`..x0Ft.....[.`.."..n....g...mLmg........E.K.j...\Z.,.d.....5.4..A.a.9..D......~X.q...9...?..W....\f.Qe8........x....q2...d.":...T...r.....o...u...D%...........H.%=_)..h.27.&.)>z......H7..J.6..q.8V.'N.<$...Y......3..j..+.w.c.......}.V...3..j......h..Tl..p..S.....C|.....B.......2..k..Hc.7.h.E.L*.J...V.}.8...H.s.3.*.....csH;..C.~..[.2.e.n...'..g,.  Vc../#...K...|..W...1(..........s.......C0IM..3......(Q.T\..+Af.......4..u3=:..... ...~...)...o.......\....'..W.......z.Wlt..6^.
+^C^F
+39 packets captured
+51 packets received by filter
+3 packets dropped by kernel
